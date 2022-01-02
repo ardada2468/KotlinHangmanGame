@@ -10,7 +10,9 @@ public class Main {
         switch (input){
             case 1: {
                 System.out.print("Enter word to guess: ");
-                Hangman hangman = new Hangman(sc.nextLine());
+                sc.nextLine();
+                String x = sc.nextLine();
+                Hangman hangman = new Hangman(x);
                 hangman.play();
             }
             case 2:{
